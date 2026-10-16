@@ -3,6 +3,7 @@ import './AnalysisPage.css';
 import AnalysisReport from './AnalysisReport.jsx';
 import './AnalysisReport.css';
 
+
 const studyAreas = [
   'Composition & Framing',
   'Lighting',
@@ -158,7 +159,10 @@ function handleRemoveImage() {
 
       </div>
 
-            <AnalysisReport activeStudy={activeStudy} />
+            <AnalysisReport
+  activeStudy={activeStudy}
+  image={image}
+/>
     </div>
   );
 }
