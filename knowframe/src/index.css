@@ -10,6 +10,7 @@
   font-family: Arial, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
 }
 
 * {
@@ -26,3 +27,6 @@ body,
 body {
   margin: 0;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');

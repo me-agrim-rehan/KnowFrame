@@ -3,37 +3,59 @@ import LanguageCard from './LanguageCard.jsx';
 
 function CinemaLanguage() {
   return (
-    <section className="cinema-language">
-      <span className="section-label">
-        01 / THE VISUAL LANGUAGE
-      </span>
+    <section className="cinema-language" id="language">
 
-      <h2>Every frame tells a story.</h2>
-
-      <p>
-        Explore the visual decisions that shape
-        how we experience cinema.
-      </p>
-
-      <div className="language-grid">
-        <LanguageCard
-          number="01"
-          title="Composition"
-          description="How subjects and objects are arranged within a frame."
-        />
-
-        <LanguageCard
-          number="02"
-          title="Lighting"
-          description="How light and shadow guide our attention."
-        />
-
-        <LanguageCard
-          number="03"
-          title="Colour"
-          description="How colour choices influence the atmosphere of a scene."
-        />
+      <div className="language-top">
+        <span>KNOWFRAME / FIELD GUIDE</span>
+        <span>VOL. 01</span>
       </div>
+
+      <div className="language-intro">
+        <h2>Start with what you notice.</h2>
+
+        <p>
+          Before learning the terminology, look at the frame.
+          Where does your eye go first? What's hidden?
+          Why does the space feel the way it does?
+        </p>
+      </div>
+
+      <div className="language-list">
+
+        <article className="language-row">
+          <span>01</span>
+          <h3>Composition</h3>
+          <p>
+            Placement, distance, balance and the space
+            around a subject.
+          </p>
+        </article>
+
+        <article className="language-row">
+          <span>02</span>
+          <h3>Lighting</h3>
+          <p>
+            Direction, shadow and the parts of a scene
+            left unseen.
+          </p>
+        </article>
+
+        <article className="language-row">
+          <span>03</span>
+          <h3>Colour</h3>
+          <p>
+            The relationship between colours, contrast
+            and atmosphere.
+          </p>
+        </article>
+
+      </div>
+
+      <div className="language-end">
+        <span>THREE WAYS OF LOOKING</span>
+        <span>KF — 001</span>
+      </div>
+
     </section>
   );
 }

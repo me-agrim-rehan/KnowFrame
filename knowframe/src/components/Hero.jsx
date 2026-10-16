@@ -10,10 +10,13 @@ function Hero() {
                     CINEMA ANALYSIS TOOL
                 </span>
 
-                <h1>
-                    Look closer.<br />
-                    See more.
-                </h1>
+               
+<h1>
+  <em>Look closer.</em>
+  <br />
+  See more.
+</h1>
+
 
                 <p>
                     Upload a frame, get an AI-powered breakdown
