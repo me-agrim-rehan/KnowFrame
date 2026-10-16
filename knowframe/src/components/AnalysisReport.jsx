@@ -1,4 +1,5 @@
 import CompositionStudy from './CompositionStudy.jsx';
+import LightingStudy from './LightingStudy.jsx';
 
 const reportSections = [
   {
@@ -67,12 +68,12 @@ function AnalysisReport({ activeStudy }) {
 
         {activeStudy === 0 ? (
   <CompositionStudy />
+) : activeStudy === 1 ? (
+  <LightingStudy />
 ) : (
   <div className="report-placeholder">
     <span>ANALYSIS CONTENT</span>
-    <p>
-      Detailed content for this study is coming next.
-    </p>
+    <p>Detailed content for this study is coming next.</p>
   </div>
 )}
 

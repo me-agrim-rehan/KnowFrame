@@ -1,0 +1,181 @@
+.lighting-study {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid #444;
+}
+
+.lighting-intro {
+  max-width: 650px;
+}
+
+.lighting-intro > span,
+.lighting-takeaway > span {
+  color: #c6a667;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+
+.lighting-intro h3 {
+  margin: 20px 0;
+  font-family: var(--font-editorial, Georgia, serif);
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 400;
+}
+
+.lighting-intro p,
+.lighting-reference-text p,
+.lighting-detail p,
+.lighting-takeaway p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* LIGHTING REFERENCE */
+
+.lighting-reference {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  margin-top: 48px;
+  border: 1px solid #383838;
+}
+
+.lighting-visual {
+  min-height: 350px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 20% 10%,
+      rgba(198, 166, 103, 0.3),
+      transparent 65%
+    ),
+    #101010;
+}
+
+.light-source {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  color: #c6a667;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.light-source span {
+  display: block;
+  font-size: 70px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.light-subject {
+  position: absolute;
+  width: 105px;
+  height: 170px;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 55px 55px 12px 12px;
+  background: linear-gradient(
+    110deg,
+    #a99a77 0%,
+    #514a3b 38%,
+    #171717 72%
+  );
+}
+
+.lighting-visual-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.lighting-reference-text {
+  padding: 36px;
+  background: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lighting-reference-text > span {
+  color: #c6a667;
+  font-size: 11px;
+}
+
+.lighting-reference-text h4 {
+  margin: 22px 0 8px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.lighting-reference-text small {
+  margin-top: 24px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* OBSERVATIONS */
+
+.lighting-details {
+  margin-top: 55px;
+  border-top: 1px solid #444;
+}
+
+.lighting-detail {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid #333;
+}
+
+.lighting-detail > span {
+  color: #c6a667;
+  font-size: 11px;
+}
+
+.lighting-detail h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lighting-detail p {
+  max-width: 650px;
+  margin: 0;
+}
+
+.lighting-takeaway {
+  margin-top: 48px;
+  padding: 28px;
+  background: #22211e;
+  border-left: 2px solid #c6a667;
+}
+
+.lighting-takeaway p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .lighting-reference {
+    grid-template-columns: 1fr;
+  }
+
+  .lighting-visual {
+    min-height: 300px;
+  }
+
+  .lighting-reference-text {
+    padding: 24px;
+  }
+
+  .lighting-detail {
+    grid-template-columns: 45px 1fr;
+    gap: 12px;
+  }
+}
