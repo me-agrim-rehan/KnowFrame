@@ -264,6 +264,63 @@ grid-template-columns: 210px minmax(0, 1fr) 280px;
   font-size: 11px;
 }
 
+/* COMPOSITION OVERLAY */
+
+.frame-viewer {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.frame-viewer img {
+  display: block;
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+}
+
+.frame-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.frame-grid span {
+  position: absolute;
+  background: rgba(198, 166, 103, 0.7);
+}
+
+.frame-grid span:nth-child(1),
+.frame-grid span:nth-child(2) {
+  width: 1px;
+  height: 100%;
+  top: 0;
+}
+
+.frame-grid span:nth-child(1) {
+  left: 33.333%;
+}
+
+.frame-grid span:nth-child(2) {
+  left: 66.666%;
+}
+
+.frame-grid span:nth-child(3),
+.frame-grid span:nth-child(4) {
+  height: 1px;
+  width: 100%;
+  left: 0;
+}
+
+.frame-grid span:nth-child(3) {
+  top: 33.333%;
+}
+
+.frame-grid span:nth-child(4) {
+  top: 66.666%;
+}
+
 /* INSPECTOR RESPONSIVENESS */
 
 @media (max-width: 1100px) {

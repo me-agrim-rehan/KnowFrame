@@ -1,0 +1,144 @@
+.composition-study {
+  margin-top: 48px;
+  border-top: 1px solid #444;
+  padding-top: 48px;
+}
+
+.composition-heading {
+  max-width: 700px;
+}
+
+.composition-heading > span,
+.composition-takeaway > span {
+  color: #c6a667;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+
+.composition-heading h3 {
+  margin: 20px 0;
+  font-family: var(--font-editorial, Georgia, serif);
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.composition-heading p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.composition-diagram {
+  margin-top: 40px;
+}
+
+.composition-grid {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background:
+    linear-gradient(
+      to right,
+      transparent 33.2%,
+      #c6a667 33.3%,
+      transparent 33.4%,
+      transparent 66.5%,
+      #c6a667 66.6%,
+      transparent 66.7%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 33.2%,
+      #c6a667 33.3%,
+      transparent 33.4%,
+      transparent 66.5%,
+      #c6a667 66.6%,
+      transparent 66.7%
+    ),
+    #242424;
+  border: 1px solid #444;
+}
+
+.grid-point {
+  position: absolute;
+  left: 66.6%;
+  top: 33.3%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #c6a667;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.diagram-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  color: #888;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.composition-details {
+  margin-top: 60px;
+  border-top: 1px solid #444;
+}
+
+.composition-detail {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #333;
+}
+
+.composition-detail > span {
+  color: #c6a667;
+  font-size: 11px;
+}
+
+.composition-detail h4 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.composition-detail p {
+  max-width: 680px;
+  margin: 0;
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.composition-takeaway {
+  margin-top: 48px;
+  padding: 28px;
+  background: #22211e;
+  border-left: 2px solid #c6a667;
+}
+
+.composition-takeaway p {
+  margin: 16px 0 0;
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .composition-study {
+    margin-top: 32px;
+    padding-top: 32px;
+  }
+
+  .composition-detail {
+    grid-template-columns: 45px 1fr;
+    gap: 12px;
+  }
+
+  .composition-takeaway {
+    padding: 20px;
+  }
+}

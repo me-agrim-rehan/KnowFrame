@@ -88,7 +88,18 @@ function handleRemoveImage() {
 
           <div className="monitor-screen">
             {image ? (
-              <img src={image} alt="Uploaded cinematic frame" />
+              <div className="frame-viewer">
+  <img src={image} alt="Uploaded cinematic frame" />
+
+  {activeStudy === 0 && (
+    <div className="frame-grid" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  )}
+</div>
             ) : (
               <div className="monitor-empty">
                 <span>+</span>

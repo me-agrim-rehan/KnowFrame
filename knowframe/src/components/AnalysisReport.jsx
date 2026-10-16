@@ -1,3 +1,5 @@
+import CompositionStudy from './CompositionStudy.jsx';
+
 const reportSections = [
   {
     id: '01',
@@ -63,15 +65,16 @@ function AnalysisReport({ activeStudy }) {
 
         <p>{section.description}</p>
 
-        <div className="report-placeholder">
-          <span>ANALYSIS CONTENT</span>
-
-          <p>
-            This area will contain detailed observations,
-            technical explanations, visual references,
-            and practical filmmaking lessons.
-          </p>
-        </div>
+        {activeStudy === 0 ? (
+  <CompositionStudy />
+) : (
+  <div className="report-placeholder">
+    <span>ANALYSIS CONTENT</span>
+    <p>
+      Detailed content for this study is coming next.
+    </p>
+  </div>
+)}
 
       </div>
 
