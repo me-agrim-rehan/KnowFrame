@@ -1,6 +1,7 @@
 import CompositionStudy from './CompositionStudy.jsx';
 import LightingStudy from './LightingStudy.jsx';
 import ColourStudy from './ColourStudy.jsx';
+import CameraStudy from './CameraStudy.jsx';
 
 const reportSections = [
     {
@@ -68,17 +69,19 @@ function AnalysisReport({ activeStudy, image }) {
                 <p>{section.description}</p>
 
                 {activeStudy === 0 ? (
-                    <CompositionStudy />
-                ) : activeStudy === 1 ? (
-                    <LightingStudy />
-                ) : activeStudy === 2 ? (
-                    <ColourStudy image={image} />
-                ) : (
-                    <div className="report-placeholder">
-                        <span>ANALYSIS CONTENT</span>
-                        <p>Detailed content for this study is coming next.</p>
-                    </div>
-                )}
+  <CompositionStudy />
+) : activeStudy === 1 ? (
+  <LightingStudy />
+) : activeStudy === 2 ? (
+  <ColourStudy image={image} />
+) : activeStudy === 3 ? (
+  <CameraStudy />
+) : (
+  <div className="report-placeholder">
+    <span>ANALYSIS CONTENT</span>
+    <p>Detailed content for this study is coming next.</p>
+  </div>
+)}
 
             </div>
 
